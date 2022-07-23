@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/style.css">
-    <title>Login | App</title>
+    <title>Sign | App</title>
 </head>
 <body>
     <main>
@@ -15,9 +15,14 @@
         </div>
         <!--div principale-->
         <div class="form">
-            <h1 class="userColor">Login</h1>
+            <h1 class="userColor">Sign up</h1>
             <!--formulaire de connexion-->
             <form action="" method="post">
+                <!--div pour les username-->
+                <div class="form-group username">
+                    <label for="name">Username</label><br>
+                    <input type="name" name="name" id="name">
+                </div>
                 <!--div pour les emails-->
                 <div class="form-group email">
                     <label for="email">Email</label><br>
@@ -28,15 +33,26 @@
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password">
                 </div>
-                <!--liens et boutons-->
-                <div class="forgot">
-                    <span class="forgotPassword userColor">Forgot password ?</span><br>
+                <!--div pour les options-->
+                <div class="form-group options">
+                    <label for="options">Options</label><br>
+                    <select name="options" id="options">
+                        <option value=""></option>
+                    </select>
                 </div>
+                <!--div pour les options-->
+                <div class="form-group Level">
+                    <label for="Level">Level</label><br>
+                    <select name="Level" id="Level">
+                        <option value=""></option>
+                    </select>
+                </div><br>
+                <!--liens et boutons-->
                 <button type="submit" class="btn-large">Login</button>
             </form>
             <!--liens vers s'enregistrer-->
             <div class="signup">
-                <span class="account">Don't have an account ? | </span><a href="" class="userColor sign">Sign up</a>
+                <span class="account">Already have an account ? | </span><a href="" class="userColor sign">Login</a>
             </div>
             <!--images des reseaux sociaux-->
             <div class="socials">
